@@ -11,6 +11,7 @@
                     <th scope="col">Azienda</th>
                     <th scope="col">Stazione di partenza</th>
                     <th scope="col">Stazione di arrivo</th>
+                    <th scope="col">Data partenza</th>
                     <th scope="col">Orario di partenza</th>
                     <th scope="col">Orario di arrivo</th>
                     <th scope="col">Codice Treno</th>
@@ -25,6 +26,7 @@
                         <th scope="row">{{ $train->Azienda }}</th>
                         <td>{{ $train->Stazione_di_partenza }}</td>
                         <td>{{ $train->Stazione_di_arrivo }}</td>
+                        <td>{{ $train->Data_Partenza }}</td>
                         <td>{{ $train->Orario_di_partenza }}</td>
                         <td>{{ $train->Orario_di_arrivo }}</td>
                         <td>{{ $train->Codice_Treno }}</td>
@@ -49,18 +51,3 @@
 
     </div>
 @endsection
-
-
-
-
-
-
-
-
-{{-- 
-
-<ul>
-    @foreach ($trains as $train)
-        <li>{{ $train->Azienda }}, {{ $train->Codice_Treno }}</li>
-    @endforeach
-</ul> --}}

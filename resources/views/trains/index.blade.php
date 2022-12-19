@@ -29,8 +29,19 @@
                         <td>{{ $train->Orario_di_arrivo }}</td>
                         <td>{{ $train->Codice_Treno }}</td>
                         <td>{{ $train->Numero_Carrozze }}</td>
-                        <td>{{ $train->In_orario }}</td>
-                        <td>{{ $train->Cancellato }}</td>
+
+                        @if ($train->In_orario)
+                            <td> Si </td>
+                        @else
+                            <td> No</td>
+                        @endif
+
+                        @if ($train->Cancellato)
+                            <td> Si </td>
+                        @else
+                            <td> No </td>
+                        @endif
+
                     </tr>
                 @endforeach
             </tbody>
